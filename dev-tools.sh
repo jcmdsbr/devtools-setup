@@ -102,6 +102,11 @@ echo 'installing terminator'
 sudo apt-get update
 sudo apt-get install terminator -y
 
+echo 'installing python 3.8 tools'
+sudo apt install python3.8 python3.8-dev python3.8-venv \
+python3-venv idle-python3.8 python3-pip virtualenv gcc \
+default-libmysqlclient-dev libssl-dev -y
+
 echo 'installing docker' 
 sudo apt-get remove docker docker-engine docker.io
 sudo apt install docker.io -y
@@ -150,7 +155,4 @@ sudo snap install node --classic
 sudo snap install robo3t-snap
 sudo snap install powershell --classic
 sudo snap install rider --classic
-
-
-
-
+sudo snap install pycharm-community --classic
