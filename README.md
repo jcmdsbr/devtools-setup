@@ -4,5 +4,6 @@ My scripts to initialize a new env linux (base a ubuntu and feacture snap enable
 
 # keyboard env
 
-vim  /etc/environment 
+```
+sudo vim  /etc/environment 
 GTK_IM_MODULE=cedilla
