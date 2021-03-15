@@ -156,3 +156,12 @@ sudo snap install robo3t-snap
 sudo snap install powershell --classic
 sudo snap install rider --classic
 sudo snap install pycharm-community --classic
+
+echo 'configuring npm environment'
+sudo mkdir /usr/local/lib/node_module
+sudo chown -R $(whoami) /usr/local/lib/node_modules
+sudo chown -R $(whoami) /usr/local/bin
+sudo chown -R $(whoami) /usr/local/share
+
+echo 'installing redis-tools'
+sudo apt-get install redis-tools -y
