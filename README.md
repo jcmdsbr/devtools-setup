@@ -9,7 +9,7 @@ If you liked the project, please give a star ;)
 
 Shell script to startup my environment in linux, using deb packages and snap.
 
-# Manual configuration from keyboard :construction:
+## Manual configuration from keyboard :construction:
 
 ```
 sudo vim  /etc/environment 
