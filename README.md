@@ -1,5 +1,5 @@
 #  The devtools-setup script :sunglasses:
-My scripts to initialize a new env linux (base a ubuntu and feacture snap enabled)
+My scripts to initialize a new env linux (base a ubuntu and feature snap enabled)
 
 
 ## Give a Star! :star:
