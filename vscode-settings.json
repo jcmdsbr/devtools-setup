@@ -1,0 +1,86 @@
+{
+   
+    "workbench.colorTheme": "Dracula",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.enablePreview": false,
+    "explorer.confirmDragAndDrop": false,
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.tsserver.log": "verbose",
+    "typescript.suggest.autoImports": true,
+    "javascript.suggest.autoImports": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "terminal.integrated.fontFamily": "monospace",
+    "terminal.integrated.fontSize": 10,
+    "terminal.integrated.lineHeight": 1,
+    "editor.tabSize": 2,
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "explorer.confirmDelete": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.fixAll.tslint": true,
+        "source.fixAll.stylelint": true
+    },
+    "editor.fontFamily": "'Fira Code'",
+    "editor.formatOnType": true,
+    "editor.fontLigatures": true,
+    "editor.fontSize": 12,
+    "editor.suggestSelection": "first",
+    "editor.parameterHints.enabled": false,
+    "editor.semanticHighlighting.enabled": false,
+    "editor.defaultFormatter": "ms-dotnettools.csharp",
+    "diffEditor.codeLens": true,
+    "extensions.ignoreRecommendations": true,
+    "scm.inputFontFamily": "Fira Code",
+    "[json]": {
+
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace",
+        "gitlens.codeLens.scopes": [
+            "document"
+        ]
+    },
+    "window.zoomLevel": 1,
+    "material-icon-theme.folders.associations": {
+        "infra": "app",
+        "entities": "class",
+        "domain": "class",
+        "schemas": "class",
+        "typeorm": "database",
+        "repositories": "mappings",
+        "http": "container",
+        "migrations": "tools",
+        "modules": "components",
+        "implementations": "core",
+        "dtos": "typescript",
+        "fakes": "mock",
+        "websockets": "pipe",
+        "protos": "pipe",
+        "grpc": "pipe",
+        "providers": "include",
+        "subscribers": "messages",
+        "useCases": "controller",
+        "kafka": "scripts",
+        "mappers": "meta",
+        "_shared": "shared",
+        "eslint-config": "tools",
+        "kube": "kubernetes"
+      },
+      "material-icon-theme.activeIconPack": "nest",
+      "material-icon-theme.files.associations": {
+        "ormconfig.json": "database",
+        "tsconfig.json": "tune",
+        "*.proto": "3d",
+        "*.webpack.js": "webpack"
+      },
+}
