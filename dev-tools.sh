@@ -45,54 +45,40 @@ sudo apt-get update
 sudo apt-get install code -y
 
 echo 'installing extensions'
-code --install-extension 4ops.terraform
+code --install-extension christian-kohler.npm-intellisense
 code --install-extension christian-kohler.path-intellisense
-code --install-extension craigthomas.supersharp
+code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension DavidAnson.vscode-markdownlint
 code --install-extension dbaeumer.vscode-eslint
-code --install-extension derivitec-ltd.vscode-dotnet-adapter
-code --install-extension doggy8088.netcore-snippets
+code --install-extension donjayamanne.githistory
 code --install-extension dracula-theme.theme-dracula
 code --install-extension eamodio.gitlens
 code --install-extension EditorConfig.EditorConfig
 code --install-extension eg2.vscode-npm-script
-code --install-extension esbenp.prettier-vscode
 code --install-extension folke.vscode-monorepo-workspace
 code --install-extension foxundermoon.shell-format
 code --install-extension Gruntfuggly.todo-tree
 code --install-extension hashicorp.terraform
-code --install-extension hbenl.vscode-test-explorer
 code --install-extension ivory-lab.jenkinsfile-support
-code --install-extension jchannon.csharpextensions
 code --install-extension jmMeessen.jenkins-declarative-support
-code --install-extension jorgeserrano.vscode-csharp-snippets
-code --install-extension josephwoodward.vscodeilviewer
-code --install-extension k--kato.docomment
-code --install-extension KishoreIthadi.dotnet-core-essentials
-code --install-extension kreativ-software.csharpextensions
+code --install-extension mhutchie.git-graph
 code --install-extension mikestead.dotenv
-code --install-extension mongodb.mongodb-vscode
 code --install-extension ms-dotnettools.csharp
+code --install-extension ms-vscode.vscode-typescript-next
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension ms-vsliveshare.vsliveshare-audio
 code --install-extension ms-vsliveshare.vsliveshare-pack
-code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension naumovs.color-highlight
-code --install-extension Orta.vscode-jest
-code --install-extension pflannery.vscode-versionlens
-code --install-extension pjmiravalle.terraform-advanced-syntax-highlighting
 code --install-extension PKief.material-icon-theme
 code --install-extension pmneo.tsimporter
 code --install-extension quicktype.quicktype
+code --install-extension rbbit.typescript-hero
 code --install-extension ritwickdey.LiveServer
-code --install-extension rocketseat.rocketseatreactjs
-code --install-extension salbert.awesome-dotnetcore-pack
-code --install-extension salbert.copy-text
-code --install-extension tintoy.msbuild-project-tools
+code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension VisualStudioExptTeam.vscodeintellicode
 code --install-extension waderyan.gitblame
 code --install-extension xabikos.JavaScriptSnippets
-code --install-extension yzhang.markdown-all-in-one
+
 
 echo 'installing chrome' 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -145,7 +131,16 @@ sudo snap install snap-store
 
 echo 'installing snap packages'
 sudo snap install spotify
-sudo snap install google-cloud-sdk --classic
+sudo snap install discord
+sudo snap install drawio
+sudo snap install flameshot
+sudo snap install flutter --classic
+sudo snap install govendor --classic
+sudo snap install gtk-common-themes
+sudo snap install intellij-idea-community --classic
+sudo snap install teams
+sudo snap install zoom-client
+sudo snap install android-studio --classic
 sudo snap install redis-desktop-manager
 sudo snap install slack --classic
 sudo snap install postman
@@ -165,3 +160,11 @@ sudo chown -R $(whoami) /usr/local/share
 
 echo 'installing redis-tools'
 sudo apt-get install redis-tools -y
+
+echo 'installing gcloud sdk'
+echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+sudo apt-get install apt-transport-https ca-certificates gnupg
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
+sudo apt-get update && sudo apt-get install google-cloud-sdk
+gcloud init
+      
