@@ -169,8 +169,8 @@ sudo apt-get update && sudo apt-get install google-cloud-sdk
 gcloud init
 
 echo 'installing nearform tools'
-npm -i  0x -g
-npm -i autocannon -g
+npm i  0x -g
+npm i autocannon -g
 mkdir workspaces
 cd workspaces
 git clone https://github.com/nearform/slow-rest-api.git
